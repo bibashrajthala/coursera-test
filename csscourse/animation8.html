@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+
+    <style>
+    @keyframes bibash{
+        0%{ background-color: blue; }
+        25%{ width:50px; }
+        50%{ 
+            width:100px;
+            background-color: green; }
+        75%{ width: 200px; }
+        100% { background-color: black;}
+    }
+    @keyframes bibash2{
+        0%{ font-size: 150%;;}
+        100% { font-size: 200%;}
+    }
+        div{
+            margin:100px;
+            width: 100px;
+            height: 100px;
+            background-color: red;  
+            animation: bibash 5s ,bibash2 5s linear;
+        }
+    </style>
+  
+</head>
+<body>
+    <div> i am div</div>
+</body>
+</html>

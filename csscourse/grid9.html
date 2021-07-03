@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .grid-container{
+            background-color: red;
+            padding: 20px;
+            display:grid;
+            grid-template-columns: 200px 300px 200px;
+           /*  grid-template-rows: 100px 200px auto; */
+            grid-column-gap:10px;
+            grid-row-gap: 10px;
+            justify-content:space-evenly;
+            height:500px;
+            align-content:space-evenly;
+        }
+        .grid-item{
+            background-color: cyan;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+            font-size: 25px;
+        }
+       #grid5{
+           /* method 1 */
+         /*  grid-area:1/2/3/4;  */
+
+         /*method 2  */
+         grid-area:1/2/span 2/span 2; 
+       }
+    </style>
+</head>
+<body>
+   <div class="grid-container">
+      <div class="grid-item" id="grid1">1</div>
+      <div class="grid-item" id="grid2">2</div>
+      <div class="grid-item" id="grid3">3</div>
+      <div class="grid-item" id="grid4">4</div>
+      <div class="grid-item" id="grid5">5</div>
+      <div class="grid-item" id="grid6">6</div>
+      <div class="grid-item" id="grid7">7</div>
+      <div class="grid-item" id="grid8">8</div>
+      <div class="grid-item" id="grid9">9</div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Types of selector</title>
+	<style>
+		/*each li element that is a child(at any level) of article element */
+		article li{
+			color: blue;
+		}
+
+		/*each ul element that is a child(at any level) of section element */
+		section ul{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Descendant selectors</h1>
+	<article>
+		<h2>list of items</h2>
+		<ul>
+			<li>item 1</li>
+			<li>item 2</li>
+			<li>item 3</li>
+		</ul>
+	</article>
+	<section>
+		<h2>list of shape</h2>
+		<ul>how about this
+			<li>circle</li>
+			<li>square</li>
+			<li>triangle</li>
+		</ul>
+	</section>
+	
+</body>
+</html>
