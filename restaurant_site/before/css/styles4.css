@@ -1,0 +1,106 @@
+body{
+	font-size: 16px;
+	color: #fff;
+	background-color: #61122F;
+	font-family: 'Oxygen',sans-serif;
+}
+
+/** Header **/
+#header-nav{
+	background-color: #f6b319;
+	border: 0;
+	border-radius: 0;
+}
+
+#logo-img{
+	background: url('../images/restaurant-logo_large.png') no-repeat;
+	background-size: 150px 150px;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0px;
+}
+/*
+/*position brand name in right side of logo
+ .navbar-header{
+ 	position: relative;
+ }
+ .navbar-brand{
+ 	position: absolute;
+ 	top: 45px;
+ 	left: 300px;
+ }
+
+*/
+/* div containing name */
+.navbar-brand{
+	padding-top: 25px;
+}
+ /* restaurant NAME */
+ .navbar-brand h1{
+ 	font-family: 'Lora',serif;
+ 	color: #557c3e;
+ 	font-size: 1.5em;
+ 	text-transform: capitalize;
+ 	font-weight: bold;
+ 	text-shadow: 1px 1px 1px #222;
+ 	margin-top: 0;
+ 	marfin-bottom: 0;
+ 	line-height: .7;
+ }
+
+ .navbar-brand a:hover , .navbar-brand a:focus{
+ 	text-decoration: none;
+ }
+
+ /* kosher certified image and text */
+ .navbar-brand p{
+ 	color: #000;
+ 	text-transform: uppercase;
+ 	font-size:  .7em;
+ 	margin-top: 15px;
+ }
+
+ /* kosher certified text only */
+ .navbar-brand p span{
+ 	vertical-align: middle;
+ }
+
+/*ul list = entire menu*/
+#nav-list{
+	margin-top: 10px;
+}
+
+/*each link of menu in navbar */
+#nav-list a{
+	color: #951c49;
+	text-align: center;
+}
+
+#nav-list a:hover{
+	background-color: #e7e7e7;
+}
+
+/* texts of menu of navbae */
+#nav-list a span{
+	font-size: 1.8em;
+}
+
+/*phone of ul items */
+#phone{
+	margin-top: 5px;
+}
+
+/*phone number */
+#phone a{
+	text-align: right;
+	padding-bottom: 0;
+	}
+
+/*we deliver text */
+#phone div{
+	color: #557c3e;
+	text-align: right;
+	padding-right: 15px;
+
+}
+
