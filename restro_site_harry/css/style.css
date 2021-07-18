@@ -1,0 +1,211 @@
+/* CSS Reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height:60px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.3rem;
+    font-family: 'Bree Serif', serif;
+    padding:12px;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    font-family: 'Bree Serif', serif;
+    padding:12px;
+}
+.btn{
+    background-color: brown;
+    color: white;
+    font: 1.6em;
+    margin: 20px;
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+/* End of Utility Classes */
+
+/*  Start of Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* align-content: center; */
+    position: relative;
+}
+#navbar::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Navogation Bar:Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 60px;
+    /* width:30px; */  /* no need of width as logo is circle and if width is given and doesnot match with height logo wont be circle so only height givena and width adjust accordingly */
+    margin: 3px 6px;
+}
+
+/* Navogation Bar:Styling list */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo 2', cursive;
+}
+#navbar  ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    color:white;
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    /* color: white; */
+    border-radius: 10px;    
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;    
+}
+/* End of Navigation Bar */
+
+/* Start of home */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height:550px;
+    /* position: relative; */
+}
+#home::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:url('../img/background/bg1.jpg') no-repeat center/cover;
+    height:642px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+} 
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+/* End of Home */
+
+/* Start of services */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    border-radius: 28px;
+    padding:34px;
+    margin: 3px 55px 25px;
+    background-color: #f2f2f2;   
+}
+#services .box img{
+    height:160px;
+    display: block;
+    margin:auto;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+/* End of services */
+
+/* Start of client section */
+#client-section{
+    height: 345px;
+    position: relative;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background:url('../img/background/bg.jpg');
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 125px;
+}
+/* End of client section */
+
+/* Start of contact section */
+#contact{
+    position: relative;  
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background:url('../img/contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-box input , #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+}
+/* End of contact section */
+
+/* Start of Footer */
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+/* End of Footer */
