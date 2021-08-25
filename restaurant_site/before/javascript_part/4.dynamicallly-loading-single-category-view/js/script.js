@@ -42,21 +42,7 @@ $(function(){ //Same as document.addEventListener("DOMContentLoaded",function{..
 		return string;
 	}
 
-	// Remove the class 'active' from home and switch to Menu button
-	var switchMenuToActive = function () {
-		// Remove 'active' from home button
-		var classes = document.querySelector("#navHomeButton").className;
-		classes = classes.replace(new RegExp("active", "g"), "");
-		document.querySelector("#navHomeButton").className = classes;
-	
-		// Add 'active' to menu button if not already there
-		classes = document.querySelector("#navMenuButton").className;
-		if (classes.indexOf("active") == -1) {
-		classes += " active";
-		document.querySelector("#navMenuButton").className = classes;
-		}
-	};
-	
+
 
 	//On Page load(bafore images or CSS)
 	document.addEventListener("DOMContentLoaded" , function(event){
@@ -74,7 +60,6 @@ $(function(){ //Same as document.addEventListener("DOMContentLoaded",function{..
 		//load the menu categories view
 		dc.loadMenuCategories = function () {
 			showLoading("#main-content");
-			switchMenuToActive();
 			$ajaxUtils.sendGetRequest(
 				allCategories,
 				buildAndShowCategoriesHTML
