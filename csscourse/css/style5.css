@@ -1,0 +1,23 @@
+
+.box{
+    width: 100px;
+    height:100px;
+    margin-bottom:20px;
+    border: 1px solid black;
+    overflow: auto;
+}
+#area2{
+    resize:none;
+}
+#box1{
+    resize: both;
+}
+#box2{
+    resize: horizontal;
+}
+#box3{
+    resize: vertical;
+}
+#box4{
+    resize: none;
+}

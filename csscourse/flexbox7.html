@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .container{
+            background-color: red;
+            display: flex;
+            flex-flow: row wrap;
+            height: 300px;
+            align-items: stretch;
+            align-content:center;
+        }
+        .items{
+            background-color: cyan;
+            margin: 20px;
+            padding: 20px;
+            width: 150px; 
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">one</div>
+        <div class="items">two</div>
+        <div class="items">three</div>
+       <div class="items">four</div>
+       <div class="items">five</div>
+        <div class="items">six</div>
+        <div class="items">seven</div>
+        <div class="items">eight</div> 
+    </div>
+</body>
+</html>

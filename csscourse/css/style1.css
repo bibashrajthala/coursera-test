@@ -1,0 +1,22 @@
+
+div{
+    width: 100px;
+    height: 30px;
+    margin:40px;
+    border: 1px solid black;
+    padding:15px;
+}
+
+#box1{  
+    box-shadow: 10px 15px grey;
+}
+#box2{
+    box-shadow: -10px -15px 5px grey;
+}
+#box3{   
+    box-shadow: 10px 15px 5px 3px grey;
+}
+
+#box4{   
+    box-shadow: 10px 15px 5px 3px grey,-10px -15px 5px 3px red;
+}

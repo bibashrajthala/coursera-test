@@ -1,0 +1,24 @@
+
+div{
+    width: 200px;
+    height: 150px;
+    margin-bottom:20px;
+    border: 1px solid black;
+    padding:15px;
+}
+
+#box1{  
+    background-image: linear-gradient(blue);
+}
+#box2{
+    background-image: linear-gradient(blue,red,green);   
+}
+#box3{   
+    background-image: linear-gradient(to right, blue,red,green); 
+}
+#box4{   
+    background-image: linear-gradient(to bottom right, blue,red,green); 
+}
+#box5{   
+    background-image: linear-gradient(160deg, blue,red,green); 
+}

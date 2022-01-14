@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elements</title>
+
+    ,<style>
+        p::first-letter{
+            font-size: 35px;
+            color: red;
+        }
+        p::first-line{
+            font-size: 35px;
+            color: red;
+        }
+        h1::before{
+            content:url('images/arrow.png');
+        }
+        h1::after{
+            content:" added after";
+        }
+        ::selection{
+            color:red;
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+   <h1>Heading</h1>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, distinctio reprehenderit? Facere adipisci debitis eaque soluta, possimus quis odio. Non repudiandae in maiores rem praesentium recusandae placeat sunt repellat eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ea ex optio dolores quia nemo dicta nobis at! Adipisci accusantium voluptates corporis minima deleniti facilis, magni praesentium nisi at rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione vitae voluptas aut itaque ea aperiam. Iusto magni pariatur quas ab quidem mollitia, totam nobis! Quasi quos nihil error blanditiis similique.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloribus qui, unde amet assumenda culpa dolore ipsam iusto laudantium doloremque natus odio dolor nobis eius at mollitia quo. Error, dolor.</p>
+   
+</body>
+</html>

@@ -1,0 +1,58 @@
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    } 
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//Media query manager
+
+/*
+0-600px = phone
+600-900px = tablet portrait
+900-1200px = tablet landscape
+1200-1800px = desktop(in desktop first approach = normal styles = already done)
+1800px+ = big desktop
+*/
+
+/*
+breakpoint arguement choices
+phone= width < 600px
+tab-port = width < 900px
+tab-land = width < 1200px
+big-desktop = width = 1800px+
+*/
+
+//1em = 16px
+
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {
+        @media only screen and (max-width:37.5em){@content}; //600px, 600/16=37.5em
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width:56.25em){@content}; //900px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width:75em){@content}; //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width:112.5em){@content}; //1800px
+    }
+}
+
+
+/*
+//// Order to write media-queries
+ORDER:
+1.BASE=base,typography,utilites
+2.general LAYOUT=grid,header,footer,navigation
+3.Page layout=SECTIONS of page along with their COMPONENTS simultaneously 
+*/

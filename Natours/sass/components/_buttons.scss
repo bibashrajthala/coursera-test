@@ -1,0 +1,99 @@
+.btn{
+    &,
+    &:link,
+    &:active {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block; /* to add padding ie change width and easily center it using text-align in its container */
+        padding: 1.5rem 4rem;
+        border-radius: 10rem;
+        transition: all .2s;
+
+        position: relative;
+
+        //change of <button> element of form
+        border: none;
+        cursor: pointer;
+
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+        &::after{
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active,
+    &:focus {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
+
+        //change of <button> element of form
+        outline: none;
+    }
+
+    &--white {
+        background-color: $color-white;
+        color: $color-grey-dark;
+
+        &::after{
+            background-color: $color-white;
+        }
+    }
+
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after{
+            background-color: $color-primary;
+        }
+    }
+
+    &::after { /*making ::after element of button same as actual btn and hiding it behind actual btn */
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+
+        transition: all .4s;
+    }
+
+    &--animated{
+        animation: moveInButtom .42s ease-out .3s;
+        animation-fill-mode: backwards;  /*due to animation-delay element is visible before animation starts so, it  makes element invisible till  animation starts( ie. from 0%) */
+    }
+}
+
+.btn-text:link,
+.btn-text:visited{
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+    transition: all .2s;
+
+    &:hover{
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translate(-2px);
+    }
+
+    &:active{
+        box-shadow: 0 .5rem 2rem rgba($color-black, .15);
+        transform: translate(0);
+
+    }
+}
